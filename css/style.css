@@ -101,7 +101,7 @@ input[type=number] {
 }
 /* hero */
 .hero{
-    padding: 0 0 199px 0;
+    padding: 0 0 100px 0;
 }
 .hero__container{
     display: flex;
@@ -182,6 +182,9 @@ input[type=number] {
 /* calculator */
 .calc{
     padding-bottom: 150px;
+}
+.calc__title{
+    margin-bottom: 40px;
 }
 .calc-wrapper{
     box-shadow: 2px 4px 11px 4px rgba(136, 136, 156, 0.25);
@@ -377,4 +380,177 @@ input[type=number] {
     color: #202020;
     text-indent: 20px;
     padding-top: 10px;
+}
+/* Our-work */
+.our-work{
+    padding-bottom: 150px;
+}
+.our-work-content{
+    display: flex;
+    justify-content: space-between;
+}
+.our-work__title{
+    margin-bottom: 40px;
+}
+.our-work__subtitle{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 122.02%;
+    color: #202020;
+    margin-bottom: 24px;
+}
+.our-work__text{
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 610px;
+    margin-bottom: 10px;
+}
+.our-work__text:last-of-type{
+    margin-bottom: 14px;
+}
+.our-work-slider{
+    display: flex;
+    justify-content: center;
+}
+.our-work-slider__arrow{
+    background: transparent;
+    border: none;
+    margin-right: 26px;
+}
+.our-work-slider__arrow:last-of-type{
+    margin-right: 0;
+}
+/* work-step */
+.work-step{
+    padding-bottom: 150px;
+}
+.work-step__title{
+    margin-bottom: 40px;
+}
+.work-step-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.work-step-list__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    position: relative;
+}
+.work-step-list__item::after{
+    content: '';
+    position: absolute;
+    top: 25%;
+    right: -85px;
+    width: 145px;
+    height: 50px;
+    background: url('../img/work-step-arrow.svg') no-repeat center;
+}
+.work-step-list__item:last-of-type::after{
+    display: none;
+}
+.work-step-item__img{
+    margin-bottom: 20px;
+}
+.work-step-item__name{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 122.02%;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.work-step-item__text{
+    line-height: 24px;
+    text-align: center;
+}
+/* price-calc */
+.price-calc{
+    padding-bottom: 150px;
+}
+.price-calc__title{
+    margin-bottom: 40px;
+}
+.price-calc-main{
+    box-shadow: 0px 4px 37px rgba(33, 27, 94, 0.25);
+    border-radius: 16px;
+    max-width: 1168px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.price-calc-left{
+    max-width: 477px;
+    width: 100%;
+    border-radius: 16px 0 0 16px;
+    background: #4A72FF url('../img/sofa.png') no-repeat bottom 20px left;
+    padding: 58px 88px 258px 33px;
+    display: flex;
+    flex-direction: column;
+}
+.price-calc__text{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: #FFFFFF;   
+}
+.price-calc__discount{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 133%;
+    color: #FFFFFF;
+    text-align: right;
+}
+.price-calc-right{
+    padding: 66px 36px 93px;
+    width: 100%;
+}
+.price-calc__form{
+    display: flex;
+    flex-direction: column;
+}
+.price-calc-form-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.price-calc-form--half{
+    display: flex;
+    flex-direction: column;
+    max-width: 295px;
+    width: 100%;
+}
+.price-calc-form__label{
+    margin-bottom: 16px;
+}
+.price-calc .input{
+    height: 45px;
+    text-indent: 20px;
+    border: 2px solid #E6E6E6;
+    border-radius: 25px;
+}
+.price-calc-form__input{
+    border: 2px solid #E6E6E6;
+    border-radius: 25px;
+    text-indent: 55px;
+    max-width: 606px;
+    width: 100%;
+    height: 50px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #202020;
+    margin-bottom: 32px;
+}
+.price-calc-form__input:first-of-type{
+    background: url('../img/user.svg') no-repeat left 20px center;
+}
+.price-calc-form__input:last-of-type{
+    margin-bottom: 40px;
+    background: url('../img/phone.svg') no-repeat left 20px center;
+}
+.price-calc-form__button{
+    max-width: 133px;
+    margin: auto;
 }
